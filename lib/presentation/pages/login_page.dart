@@ -17,8 +17,6 @@ class LoginPage extends GetView<LoginController> {
             children: [
               const Text("SIGN IN", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
               const SizedBox(height: 30),
-
-
               Container(
                 padding: const EdgeInsets.all(16.0),
                 decoration: BoxDecoration(
@@ -66,19 +64,16 @@ class LoginPage extends GetView<LoginController> {
                   ],
                 ),
               ),
-
               const SizedBox(height: 10),
               const Align(
                 alignment: Alignment.centerRight,
                 child: Text('Forgot Password?', style: TextStyle(color: Colors.blue)),
               ),
               const SizedBox(height: 20),
-
               // Tombol Login
               ElevatedButton(
                 onPressed: () {
                   controller.login();
-                  // Get.offAllNamed('/home');
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.yellow, // Warna latar tombol
@@ -87,20 +82,6 @@ class LoginPage extends GetView<LoginController> {
                 child: const Text("Login"),
               ),
               const SizedBox(height: 20),
-              // Tombol Login
-              ElevatedButton(
-                onPressed: () {
-                  // Logika login
-                  Get.offAllNamed(Routes.HOME_ADMIN);
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.yellow,
-                  foregroundColor: Colors.black,
-                ),
-                child: const Text("Login Admin"),
-              ),
-              const SizedBox(height: 20),
-
               GestureDetector(
                 onTap: () {
                   Get.toNamed(Routes.REGISTRASI);
