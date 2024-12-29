@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginController extends GetxController {
+
   var isPasswordHidden = true.obs;
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();

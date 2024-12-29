@@ -110,7 +110,7 @@ class InfoPageAdmin extends StatelessWidget {
               Navigator.pushReplacementNamed(context, '/info_admin');
               break;
             case 4:
-              Navigator.pushReplacementNamed(context, '/profil');
+              Navigator.pushReplacementNamed(context, '/profil_admin');
               break;
           }
         },
